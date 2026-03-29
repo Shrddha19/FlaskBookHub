@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Book</title>
+    <link rel="stylesheet" href="{{url_for('static' ,filename='order.css')}}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Order Book</h1>
+
+    <!-- Book Info -->
+    <div class="book">
+        <img src="{{ url_for('static', filename='images/book2.jpg') }}" alt="Book Image">
+        <div>
+            <h4>Python Basics</h4>
+            <p>Author: John Doe</p>
+            <p>Price: ₹500</p>
+        </div>
+    </div>
+
+    <!-- Order Form -->
+    <form action="/order2" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Address</label>
+        <textarea name="address" required></textarea>
+
+        <label>Quantity</label>
+        <input type="number" name="quantity" min="1" value="1">
+
+        <label>Payment Method</label>
+        <select name="payment">
+            <option>Cash on Delivery</option>
+            <option>UPI</option>
+            <option>Card</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+         <a href="/choice">Back</a>
+    </form>
+</div>
+
+</body>
+</html>

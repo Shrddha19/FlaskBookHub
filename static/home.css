@@ -1,0 +1,89 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full screen layout */
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* Full background */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Full page center */
+.full-page {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;   /* vertical center */
+    align-items: center;       /* horizontal center */
+
+    text-align: center;
+    color: white;
+}
+
+/* Headings */
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    margin-bottom: 25px;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    background: white;
+    color: #667eea;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #eee;
+}
+
+/* Links */
+.links {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}

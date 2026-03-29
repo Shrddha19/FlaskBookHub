@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='choice.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="/choice" method="POST">
+    <div>
+        <h1>Glad To Have You Here </h1>
+        
+        <h3>Available Books</h3>
+
+<div class="book-container">
+
+    <!-- Book 1 -->
+    <div class="book-card">
+        <img src="{{ url_for('static', filename='images/book1.jpg') }}" alt="Book">
+        <h3>Tales Under Purple Sky</h3>
+        <p>₹500</p>
+        <a href="/order1">Order Now</a>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="book-card">
+        <img src= "{{ url_for('static', filename='images/book2.jpg') }}" alt="Book">
+        <h3>Memory</h3>
+        <p>₹650</p>
+        <a href="/order2">Order Now</a>
+    </div>
+
+    <!-- Book 3 -->
+    <div class="book-card">
+        <img src= "{{ url_for('static', filename='images/book3.jpg') }}" alt="Book">
+        <h3>The Girl</h3>
+        <p>₹700</p>
+        <a href="/order3">Order Now</a>
+    </div>
+
+    <!-- Book 4 -->
+    <div class="book-card">
+        <img src="{{ url_for('static', filename='images/book4.jpg') }}" alt="Book">
+        <h3>Captically Matched</h3>
+        <p>₹800</p>
+        <a href="/order4">Order Now</a>
+    </div>
+    <div>
+        
+        <a href="/View ">View Books</a><br><br>
+        <a href="/Review ">Review the Book</a>
+    </div>
+    </form>
+</body>
+</html>
